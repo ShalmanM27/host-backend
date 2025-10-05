@@ -1,0 +1,16 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+HELA_RPC = os.getenv("HELA_RPC")
+PRIVATE_KEY = os.getenv("PRIVATE_KEY")
+
+FEED_ADDRESS = os.getenv("FEED_ADDRESS")
+COMMENT_ADDRESS = os.getenv("COMMENT_ADDRESS")
+LEARNING_BADGE_ADDRESS = os.getenv("LEARNING_BADGE_ADDRESS")
+STREAK_ADDRESS = os.getenv("STREAK_ADDRESS")
+LEARNING_ADDRESS = os.getenv("LEARNING_ADDRESS")
+DAO_ADDRESS = os.getenv("DAO_ADDRESS")
+MODERATION_ADDRESS = os.getenv("MODERATION_ADDRESS")
+PROFILE_ADDRESS = os.getenv("PROFILE_ADDRESS")
