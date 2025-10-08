@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routers import feed, comment, learning, dao, moderation, streak, profile
+from app.routers import learning, upload
 
 app = FastAPI(title="Web3 Productivity Social App")
 
@@ -8,7 +8,6 @@ app = FastAPI(title="Web3 Productivity Social App")
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://team-winnovators.netlify.app",
 ]
 
 app.add_middleware(
@@ -20,13 +19,8 @@ app.add_middleware(
 )
 
 # Include routers
-app.include_router(feed.router)
-app.include_router(comment.router)
 app.include_router(learning.router)
-app.include_router(dao.router)
-app.include_router(moderation.router)
-app.include_router(streak.router)
-app.include_router(profile.router)
+app.include_router(upload.router)
 
 # Root
 @app.get("/")
