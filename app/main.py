@@ -8,7 +8,8 @@ app = FastAPI(title="Web3 Productivity Social App")
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://team-winnovators.netlify.app"
+    "https://team-winnovators.netlify.app",
+    "https://desocialx.netlify.app"
 ]
 
 app.add_middleware(
